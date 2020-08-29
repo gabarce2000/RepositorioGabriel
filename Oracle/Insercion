@@ -1,0 +1,42 @@
+
+
+insert into CLIENTE values
+(1,'Jose Javier','Cedeño Dueñas','1313456422','M','0988589388','La Aurora','jjvier@gmail.com') 
+insert into CLIENTE values
+(2,'Carlos Alberto','Cevallos Cevallos','1313456472','M','097988589345','La pradera','carlos_ab@gmail.com')
+insert into CLIENTE values
+(3,'Leonel Andrés','Messi Cuccitini','14513445432','M','0989589234','Barcelona','leomessir@gmail.com')
+insert into CLIENTE values
+(4,'Andrea Gabriela','Mendoza Quijije','12343453456','F','0968978473','Barbasquillo','andre_gb@gmail.com')
+insert into GABRIEL.CLIENTE values
+(5,'Mikel Steven','Mejia Zambrano','1342456786','M','09788898857','La Aurora','maikel_s@gmail.com')
+
+insert into ATAUD values
+(1,'Modelo emperador','Acabado rectangular','Plateado','Madera',700)
+insert into ATAUD values
+(2,'Modelo americano','Laqueado a lo natural','Marron','Madera',550)
+insert into ATAUD values
+(3,'Modelo figaro redondo','Acabado rectangular','Café','Metal',900)
+
+insert into GABRIEL.DIFUNTO values
+(1,1,'Carlos Andreés','Zamora Dueñas','132456432','M','14-04-1976','09-02-2020')
+insert into DIFUNTO values
+(2,2,'Jose Gabriel','Zambrano Cedeño','131657812','M','02-06-1970','14-03-2020')
+insert into DIFUNTO values
+(3,3,'Armando Daniel','Suares Quijije','134679675','M','24-11-1960','30-03-2020')
+insert into DIFUNTO values
+(4,4,'Ricardo Daniel','Mendoza Lopez','135628193','M','16-09-1990','10-04-2020')
+insert into GABRIEL.DIFUNTO values
+(5,5,'Oscar Roberto','Pabon Mejia','125264780','M','28-03-1988','13-04-2020');
+
+
+insert into GABRIEL.VENTATAUD values
+(1,1,1,2 ,'10-02-2020','Efectivo', 1200)
+insert into VENTATAUD values
+(2,2,2,1 ,'15-03-2020','Efectivo', 700)
+insert into VENTATAUD values
+(3,3,3,1 ,'30-03-2020','Efectivo', 500)
+insert into VENTATAUD values
+(4,4,4,1 ,'10-04-2020','Efectivo', 900)
+insert into VENTATAUD values
+(5,5,5,1 ,'13-04-2020','Efectivo', 500);
