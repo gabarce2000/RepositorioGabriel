@@ -1,0 +1,50 @@
+create table CLIENTE(
+	IDCLIENTE                        int                  not null,
+	NOMBRES                          varchar(20)          null,
+	APELLIDOS                        varchar(20)          null,
+	NUMEROCEDULA                     varchar(20)         null,
+	SEXO                             varchar(20)         null,
+	TELEFONO                         varchar(20)         null,
+    DIRECCION                        varchar(20)         null,
+	EMAIL                            varchar(20)         null,
+	constraint PK_CLIENTE primary key (IDCLIENTE)
+)
+/----TABLA ATAUD------/
+create table ATAUD (
+	IDATAUD               int                  not null,
+    NOMBRE               varchar(50)          null,
+	DESCRIPCION          varchar(50)          null,
+	COLOR                varchar(50)          null,
+	MATERIAL             varchar(50)           not null,
+	PRECIO               int                    not null,
+	constraint PK_ATAUD primary key (IDATAUD) 
+
+
+)
+/----TABLA VENTA ATAUD------/
+
+create table VENTATAUD(
+	IDVENTATAUD                       int                  not null,
+	IDVENTACLIENTE                       int                  not null,
+	IDATAUD                              int                  not null,
+	CANTIDAD                             int                  not null,
+	FECHAVENTA                           date                null,
+	FORMAPAGO                           varchar(20)            null,
+	TOTALPAGO                           int                    not  null,
+	
+	constraint PK_VENTATAUD primary key (IDVENTATAUD,IDVENTACLIENTE,IDATAUD)
+
+)
+/----TABLA DIFUNTO------/
+create table DIFUNTO(
+	IDDIFUNTO             int                  not null,
+    IDVENTATAUD           int                  not null,
+	NOMBRES                          varchar(20)          null,
+	APELLIDOS                        varchar(20)          null,
+	NUMEROCEDULA                     varchar(20)         null,
+	SEXO                             varchar(20)         null,
+	FECHA_NACIMIENTO                 date           null,
+	FECHA_FALLECIMIENTO              date           null,
+	constraint PK_DIFUNTO primary key (IDDIFUNTO,IDVENTATAUD) 
+
+)
